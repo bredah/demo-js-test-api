@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "complexity": ["error", 5],
+    "array-element-newline": ["error", "consistent"]
+  }
+}
