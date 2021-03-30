@@ -1,5 +1,5 @@
 {
-  "name": "test-api",
+  "name": "demo-js-test-api",
   "version": "1.0.0",
   "description": "How to perform api tests using JavaScript",
   "scripts": {

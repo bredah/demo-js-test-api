@@ -1,15 +1,14 @@
-# API Testing
+# Demo - API Testing
 
 This project presents some ways to perform API tests: unit (mocha) and behavior (cucumber)
 
 - **unit**: presents a closer view of development in the form of creating unit tests.
 - **behavior**: presents the behavioral test, using a common language so that all members of the project can interpret, thus allowing everyone to add, modify and remove the tests created.
 
-- [API Testing](#api-testing)
-  - [Prepare](#prepare)
-  - [Execution](#execution)
-    - [Execution of tests using mocha](#execution-of-tests-using-mocha)
-    - [Execution of tests using cucumber](#execution-of-tests-using-cucumber)
+- [Prepare](#prepare)
+- [Execution](#execution)
+  - [Execution of tests using mocha](#execution-of-tests-using-mocha)
+  - [Execution of tests using cucumber](#execution-of-tests-using-cucumber)
 
 
 ## Prepare
