@@ -4,9 +4,9 @@
   "description": "How to perform api tests using JavaScript",
   "scripts": {
     "lint": "eslint . --fix",
-    "prettier": "prettier --write **/**/*.js",
-    "test:mocha": "mocha --require @babel/register test/**/*.js --reporter mochawesome",
-    "test:cucumber": "cucumber-js --require-module @babel/register -f progress -f html:cucumber-report.html --publish-quiet"
+    "prettier": "prettier --loglevel error --write **/*.js **/**/*.js",
+    "test:bdd": "cucumber-js --require-module @babel/register -f progress -f html:cucumber-report.html --publish-quiet",
+    "test:spec": "mocha --require @babel/register test/**/*.js --reporter mochawesome"
   },
   "husky": {
     "hooks": {
@@ -14,7 +14,10 @@
       "pre-push": "npm test"
     }
   },
-  "keywords": ["mocha", "cucumber-js"],
+  "keywords": [
+    "mocha",
+    "cucumber-js"
+  ],
   "author": "bredah",
   "license": "ISC",
   "devDependencies": {
@@ -24,19 +27,15 @@
     "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.8",
     "@cucumber/cucumber": "^7.0.0",
-    "ajv": "^8.0.1",
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "chai-json-schema": "^1.5.1",
     "chai-json-schema-ajv": "^5.2.3",
+    "dotenv": "^8.2.0",
     "eslint": "^7.23.0",
     "husky": "^5.2.0",
     "mocha": "^8.3.2",
     "mochawesome": "^6.2.2",
-    "prettier": "^2.2.1",
-    "uuid": "^8.3.2"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0"
+    "prettier": "^2.2.1"
   }
 }

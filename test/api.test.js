@@ -41,7 +41,7 @@ describe('path: /pet', () => {
 
     expect(response).to.have.status(200);
     expect(response).to.be.json;
-    currentPetId = response.body.id
+    currentPetId = response.body.id;
   });
 
   it('update an existing pet', async () => {
